@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <style>
+
+    /* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+    </style>
+    <!-- for part two -->
+    <style>
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+</style>
+
+
+<style>
+  .column2 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row2 {
+    display: flex;
+  }
+  
+  .column3 {
+    flex: 33.33%;
+    padding: 5px;
+  }
+</style>
+
+
+<style>
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row3 {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
+
+
+
+<!-- <style>
+  img {
+    border: 5px solid #555;
+  }
+</style> -->
+
+<style>
+  .checked {
+    color: orange;
+  }
+</style>
+
+
+<style>
+  .column4 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row4 {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
+
+<style>
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column5 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row5 {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+</style>
+
+
+<style>
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column6 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row6 {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
+
+<style>
+  electronics{
+    border-radius: 50%;
+  }
+</style>
+
+
+<style>
+  .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+  
+</style>
+
+<!-- <style>
+  body{
+    background: lightblue;
+  }
+</style> -->
+
+
+   
+</head>
+<body>
+    <div class="container">
+        <img src="image3/flip.jpg" alt="" width="1500" height="250">
+        <div class="top-left"><h1><b>flipkart</b></h1></div>
+        <div class="top-right"><h1><b>glocery</b></h1></div>
+        
+       
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <input type="text" placeholder="Search..">
+    </div>
+    <!-- <nav align="center">
+        <p>
+         <b>search :</b> <input type="search" name="search" id="">
+            <select name="" id="">
+            <option value="">account</option>
+            <option value="orders">orders</option>
+            <option value="coupons">coupons</option>
+            <option value="helpcenter">helpcenter</option>
+            <option value="wishlist">wishlist</option>
+       
+           
+            </select>
+        </p>
+    </nav>
+    <nav>
+      <p>
+        <p>
+          <a href="#">home</a>
+          <a href="#">orders</a>
+          <a href="#"> notification</a>
+          <a href="#">cart</a>
+          <a href="#">wishlist</a>
+      </p>
+      </p>
+    </nav>
+ <br>
+ <br>
+ <br> -->
+
+ <!-- for part two -->
+ <br>
+ <br>
+<div class="row">
+    <div class="column">
+      <div class="electronics">
+        <figure>
+        <img src="image3/electronics.jpeg" alt="" width="90" height="70">
+      </div>
+        <figcaption><h4>Electronics</h4></figcaption>
+      
+    </figure>
+    </div>
+    <div class="column">
+        <figure>
+<img src="image3/fashion.avif" alt="" width="90" height="70">
+<figcaption><h4>fashion</h4></figcaption>
+</figure>
+</div>
+<div class="column">
+    <figure>
+<img src="image3/flight.jpg" alt="" width="90" height="70">
+<figcaption><h4>flights Buses & More</h4></figcaption>
+</figure>
+</div>
+<!-- <div class="column">
+<img src="image3/flip.jpg" alt="" width="90" height="70">
+</div> -->
+<div class="column">
+    <figure>
+<img src="image3/gro.jpg" alt="" width="90" height="70">
+<figcaption><h4>glossary & More</h4></figcaption>
+</figure>
+</div>
+<div class="column">
+    <figure>
+<img src="image3/home and fur.jpg" alt="" width="90" height="70">
+<figcaption><h4>fourtnier & More</h4></figcaption>
+</figure>
+</div>
+<div class="column">
+    <figure>
+<img src="image3/scan.gif" alt="" width="90" height="70">
+<figcaption><h4>Scan & Pay</h4></figcaption>
+</figure>
+</div>
+<div class="column">
+    <figure>
+<img src="image3/smrt gadges.jpeg" alt="" width="90" height="70">
+<figcaption><h4>smart gadgest</h4></figcaption>
+</figure>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="slideshow-container">
+    <div class="myslides fade">
+        
+    <img src="image3/boat3.jpg" alt="" width="1500" height="450">
+</div>
+<!-- <div class="myslides fade">
+    <div class="numbertext">2/4</div>
+<img src="image3/baot.jpg" alt="" width="1500" height="450">
+</div>
+<div class="myslides fade">
+    <div class="numbertext">3/4</div>
+    <img src="image3/boat2.jpg" alt="" width="1500" height="450">
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div> -->
+      <br>
+      <br>
+      <br>
+      <h1><b>Most-viewed deals</b></h1>
+      <div class="row2">
+        <div class="column2">
+          <fieldset>
+          <figure>
+            <figcaption><b>limited time-out</b></figcaption>
+          </figure>
+      
+      <img src="image3/Neckband.webp" alt="" width="150" height="150">
+      <br>
+      <br>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked" ></span>
+      <figure>
+        <figcaption><b>boat</b> <br>rockerz 255 pro+ / with...</figcaption>
+        
+        <figcaption><b>neckband @999*</b></figcaption>
+       
+      </figure>
+    </div>
+  </fieldset>
+    <div class="column2">
+      <fieldset>
+      <figure>
+        <figcaption><b>limited-time</b></figcaption>
+      </figure>
+      <img src="image3/adv.webp" alt="" width="150" height="150">
+      <br>
+      <br>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star" ></span>
+      <figure>
+        <figcaption><b>noise</b><br>
+        noise colorfit2.1.8 display</figcaption>
+        
+      <figcaption>
+        <b>just @1499*</b>
+      </figcaption>
+    </figure>
+      </div>
+    </fieldset>
+      <div class="column2">
+        <fieldset>
+        <figure>
+          <figcaption><b>best deal </b></figcaption>
+        </figure>
+      <img src="image3/galaxy.jpg" alt="" width="150" height="150">
+      <br>
+      <br>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star" ></span>
+     
+      <figure>
+        
+        <figcaption> samsung galaxy S21 FE 5G </figcaption>
+        
+        <figcaption><b> just@17999</b></figcaption>
+      </figure>
+      </div>
+    </fieldset>
+      <div class="column2">
+        <fieldset>
+        <figure>
+          <figcaption><b>best-deal</b></figcaption>
+        </figure>
+      <img src="image3/boats earbuds.jpg" alt="" width="150" height="150">
+      <br>
+      <br>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star" ></span>
+      <figure>
+        <figcaption><b>boat</b><br>Airpodes 131</figcaption>
+
+        
+        <figcaption><b>just@999*</b></figcaption>
+      </figure>
+    </div>
+  </fieldset>
+      <!-- <div class="column2"> -->
+      <!-- <img src="image3/Bags.jpg" alt="" width="150" height="150">
+      </div> -->
+      <!-- <div class="column2">
+      <img src="image3/puma.webp" alt="" width="150" height="150">
+      </div> -->
+      <!-- <div class="column2">
+      <img src="image3/pavilion.png" alt="" width="150" height="150">
+      </div> -->
+      <div class="column2">
+        <fieldset>
+        <figure>
+          <figcaption><b>best-deal</b></figcaption>
+        </figure>
+     
+        <img src="image3/watches.jpg" alt="" width="150" height="150">
+        <br>
+        <br>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star" ></span>
+        <br>
+        <figcaption><b>Titan</b><br>Karishma anolg watch <br></figcaption>
+
+        <figcaption> for-men  <br> <b>just@9999*</b> </fieldset>
+       
+      
+        </figure>
+      </div>
+    </fieldset>
+    </div>
+    <br>
+    <br>
+    <h1><b>Recently viewd Stores</b></h1>
+    <div class="row3">
+      <div class="column3">
+        <figure>
+          <figcaption><b>Smart-watches</b></figcaption>
+        </figure>
+<img src="image3/noise.webp" alt="" width="170" height="180">
+<figure>
+  <figcaption><b>Noise</b><br>noise-colorFit</figcaption>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked" ></span>
+
+  <figcaption><b>starting @999*</b></figcaption>
+</figure>
+</div>
+<div class="column3">
+  <figure>
+    <figcaption>
+      <b>face-wash</b>
+    </figcaption>
+  </figure>
+<img src="image3/facewash.jpg" alt="" width="190" height="190">
+<figure>
+  <figcaption> <b>Himalayan</b> <br>face-wash</figcaption>
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+  <figcaption>
+    <b>just starting From 99*</b>
+  </figcaption>
+</figure>
+</div>
+<div class="column3">
+  <figure>
+    <figcaption>
+      <b>Speakers</b>
+    </figcaption>
+  </figure>
+<img src="image3/jbl.webp" alt="" width="190"
+height="190">
+<figure>
+  <figcaption><b>JBL</b><br>speakers</figcaption>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+  <figcaption>
+    <b>just@999*</b>
+  </figcaption>
+</figure>
+</div>
+<div class="column3">
+  <figure>
+    <figcaption>
+      <b>pendrives</b>
+    </figcaption>
+  </figure>
+<img src="image3/pendrive.webp" alt="" width="190"
+height="190">
+<figure>
+  <figcaption><b>HP-pendrive</b><br>hp-pendrive 64GB</figcaption>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+  <figcaption>
+    <b>just @499*</b>
+  </figcaption>
+</figure>
+</div>
+      </div>
+
+    <br>
+    <br>
+    <br>
+    <h1><b>sponsored</b></h1>
+    <br>
+    <div class="img">
+    <img src="image3/shampoo.jpeg" alt="" width="1500" height="320">
+  </div>
+  <br>
+  <br>
+  <h1><b>best deals on summer</b></h1>
+  <div class="row4">
+    <div class="column4">
+      <fieldset>
+  <img src="image3/sunglasses.webp" alt="" width="190" height="190">
+
+  <figure>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <figcaption>
+      <b>Elligator</b><br>UV Protector wayfarer
+    </figcaption>
+    <figcaption><b>Just@179</b></figcaption>
+  </figure>
+  
+</div>
+</fieldset>
+<div class="column4">
+ 
+  <fieldset>
+  <img src="image3/handbags.jpg" alt="" width="190"
+  height="190">
+
+  <figure>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star"></span>
+    <figcaption><b>Fargo</b><br>Women handbags <br><b>just@335</b></figcaption>
+  </figure>
+  </div>
+</fieldset>
+  <div class="column4">
+    <fieldset>
+  <img src="image3/t-shirt.webp" alt="" width="190"
+  height="190">
+  
+  <figure>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star"></span>
+    <figcaption><b>Wargon</b><br>Men round neckband <br><b>Just@383</b></figcaption>
+  </figure>
+  </div>
+</fieldset>
+  <div class="column4">
+    <fieldset>
+  <img src="image3/dresses.webp" alt="" width="190"
+  height="190">
+  <figure>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star"></span>
+    <figcaption><b>MAX</b><br>Women A-line purple <br><b>Just@1,119</b></figcaption>
+  </figure>
+  </div>
+</fieldset>
+</div>
+<br>
+<br>
+<h1><b>sponsored</b></h1>
+<br>
+<img src="image3/pavilion.png" alt="" width="1500" height="450">
+<br>
+<br>
+<h1><b>Widest collection</b></h1>
+<br>
+<div class="row5">
+  <div class="column5">
+    <fieldset>
+<img src="image3/guitar.jpg" alt="" width="190" height="200">
+<figure>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star "></span>
+  <span class="fa fa-star"></span>
+  <figcaption>
+    <b>YAMAHA F280</b><br>Acoustics guitar <br>@386/month
+  </figcaption>
+</figure>
+</fieldset>
+</div>
+<div class="column5">
+  <fieldset>
+<img src="image3/air.webp" alt="" width="190" height="200">
+<figure>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star "></span>
+  <span class="fa fa-star"></span>
+  <figcaption>
+    <b>BAJAJ 36L ROOM/PERSONAL</b> <br>(White, PX97 Torque New) <br>@249/month
+  </figcaption>
+</figure>
+</fieldset>
+</div>
+<div class="column5">
+  <fieldset>
+<img src="image3/trimer.jpg" alt="" width="190"
+height="200">
+<figure>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star "></span>
+  <span class="fa fa-star"></span>
+  <figcaption>
+    <b>PHILIPS</b> <br>BT/18 Trimmer 30Min runtime <br>@249
+  </figcaption>
+</figure>
+</fieldset>
+</div>
+<div class="column5">
+  <fieldset>
+<img src="image3/for.jpg" alt="" width="190" height="200">
+<figure>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star "></span>
+  <span class="fa fa-star"></span>
+  <figcaption>
+    <b>FORTUNE</b> <br>Sunlite sunflower oil can(5L) <br>@549
+  </figcaption>
+</figure>
+</fieldset>
+</div>
+</div>
+<br>
+<br>
+<h1><b>No Cost EMI</b></h1>
+<br>
+<br>
+
+<div class="row6">
+  <div class="column6">
+    <fieldset>
+<img src="image3/2.jpg" alt="" width="190" height="200">
+<figure>
+  <figcaption>
+ <h3><b>Lenovo-Gaming laptop</b></h3>
+  </figcaption>
+</figure>
+</div>
+</fieldset>
+<div class="column6">
+  <fieldset>
+<img src="image3/3.jpg" alt="" width="190" height="200">
+<figure>
+  <figcaption>
+    <h3><b>HP-Pavillion</b></h3>
+  </figcaption>
+</figure>
+</div>
+</fieldset>
+<fieldset>
+<div class="column6">
+<img src="image3/dell1.png" alt="" width="290" height="190">
+<figure>
+  <figcaption>
+  <h3><b> Dell </b></h3>
+  </figcaption>
+</figure>
+</div>
+</fieldset>
+<div class="column6">
+  <fieldset>
+<img src="image3/asus.png" alt="" width="190" height="200">
+<figure>
+  <figcaption><h3><b>ASUS</b></h3></figcaption>
+</figure>
+</div>
+</fieldset>
+</div>
+<br>
+<br>
+<h1><b>Suggestion for You</b></h1>
+<img src="image3/virat.jpg" alt="" width="1500" height="450">
+<br>
+<br>
+<br>
+<!-- <video src="video/"></video>
+<iframe width="1500" height="315" src="https://www.youtube.com/embed/O2JdB_wrYTg?si=id9O8Q0vtgYaVJh-" title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br> -->
+<!-- <b><h1>for You</h1></b> -->
+<hr>
+<nav align="center">
+<img src="image3/ff.avif" alt="" width="350" height="250">
+</nav><nav align="center">
+  <h3><b>contact</b></h3>
+  <b>Address :  </b> 562 Wellington Road,Street 42,San Francisco <br>
+  <br>
+  <b>Phone : </b>+91 80283747372/ +91 7411673245
+  <br>
+  <br>
+<b>Hours : </b> 10:00 - 18:00, Mon-Sat
+</nav>
+<br>
+<br>
+<hr>
+ <nav align="center">
+<b>Follow Us</b><br>
+<img src="image3/yy.jpg" alt="" width="180" height="90">
+ </nav>
+<nav align="left">
+  <b>About</b><br>
+  About us <br>
+   Delivery Information
+<br>
+Privacy Policy
+<br>
+Terms And Conditions
+<br>
+contact Us
+</nav><nav align="right">
+ <b> My Account</b><br>
+  Sign in <br>
+  View Cart <br>
+  My wishlist <br>
+  Track My order <br>Help
+</nav><br>
+<br>
+<nav align="left">
+  <b>Install App</b>
+
+</nav>
+
+
+
+</body>
+</html>
