@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(we/wea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+.weather-head{
+    height: 45px;
+    padding: 20px;
+    left: 0;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    /* display: flex; */
+    align-items: left;
+    justify-content: space-around;
+}
+.weather a{
+    display: inline;
+    position: relative;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition:  color 0.3ease;
+
+}
+.weather a:hover{
+    color: #164831;
+}
+h1 {
+    text-align: center;
+    padding: 12px;
+
+}
+.input{
+    text-align: center;
+    padding: 50px;
+}
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button :hover{
+    background-color: #133444;
+}
+#weather-info{
+    margin-top: 20px;
+}
+#weather-image{
+    margin-top: 20px;
+}
+#weather-icon{
+    width: 100px;
+    height: 100px;
+}
+.input input{
+    padding: 12px 20px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: transparent;
+    
+}
+#weather-icon{
+    width: 100px;
+    height: 100px;
+    display: block;
+}
