@@ -1,0 +1,143 @@
+.first{
+    position: relative;
+    width: 1900px;
+    height: 440px;
+}
+.first img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.bottom-left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+.top-right{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: white;
+    display: flex;
+    gap: 30px;   
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.input{
+    position: absolute;
+   top: 50%;
+   left: 48%;
+    border-radius: 10px;
+    color: white;
+}
+.search-box{
+    width: 250px;
+    padding: 10px 25px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: url('https://www.google.com/imgres?q=search%20icon%20png&imgurl=https%3A%2F%2Fimg.icons8.com%2Fios7%2F600%2Fsearch.png&imgrefurl=https%3A%2F%2Ficons8.com%2Ficons%2Fset%2Fsearch&docid=Wo2sw3TTIL6jIM&tbnid=yZIWLrcol8r-XM&vet=12ahUKEwirk8q-kZmMAxXRlK8BHculJFAQM3oECGQQAA..i&w=600&h=600&hcb=2&ved=2ahUKEwirk8q-kZmMAxXRlK8BHculJFAQM3oECGQQAA') no-repeat right 10px center;
+    background-size: 20px;
+   
+}
+.up{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.upone{
+    position: absolute;
+    top: 30%;
+    left:55%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.bottom-left:hover,input:hover, .top-right-item:hover{
+    color: white;
+    text-shadow: 1px 1px 1px white;
+}
+.conatiner{
+    display: flex;
+    gap: 200%;
+    justify-content: center;
+}
+.image{
+    position: relative;
+    /* border: 2px solidblack; */
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+}
+.image:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+} 
+.image img{
+    width: 70%;
+    height: 220%;
+
+}
+.collections {
+    display: flex;
+    align-items:center;   
+}
+.images img{
+    width: 40%;
+    height: 2%;
+}
+.text{
+    margin-left: 20px;
+    font-size: 18px;
+    border-style:hidden ;
+}
+.login{
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    /* background: white; */
+    box-shadow: 0px 0 px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+   
+}
+button{
+    width: 105%;
+    padding: 10px;
+    background: #ff4d4d;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.image1:hover{
+ transform: scale(1.1); 
+ box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+
+}
+.image1{
+    position: relative;
+    /* border: 2px solidblack; */
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.image1 img{
+    width: 109%;
+    height: 850%;
+    overflow: hidden;
+}
