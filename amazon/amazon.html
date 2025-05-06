@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon</title>
+
+<style>
+    .topnav {
+        overflow: hidden;
+        background-color: #e9e9e9;
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Style the "active" element to highlight the current page */
+      .topnav a.active {
+        background-color: #2196F3;
+        color: white;
+      }
+    
+      /* Style the search box inside the navigation bar */
+      .topnav input[type=text] {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+      }
+      
+      /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+      @media screen and (max-width: 600px) {
+        .topnav a, .topnav input[type=text] {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type=text] {
+          border: 1px solid #cccccc00;
+        }
+      }
+      
+</style>
+<style>
+    .topnav2 {
+        overflow: hidden;
+        background-color: #e9e9e9;
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Style the "active" element to highlight the current page */
+      .topnav a.active {
+        background-color: #2196F3;
+        color: white;
+      }
+      
+      /* Style the search box inside the navigation bar */
+      .topnav input[type=text] {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+      }
+      
+      /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+      @media screen and (max-width: 600px) {
+        .topnav a, .topnav input[type=text] {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type=text] {
+          border: 1px solid #ccc;
+        }
+      }
+</style>
+
+
+<style>
+    /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+</style>
+
+<style>
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .row {
+        display: flex;
+      }
+      
+      .column {
+        flex: 33.33%;
+        padding: 5px;
+      }
+      
+</style>
+
+<style>
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row1 {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  
+</style>
+
+<style>
+    .checked {
+        color: orange;
+      }
+</style>
+
+<style>
+    .column2 {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .row2 {
+        display: flex;
+      }
+      
+      .column {
+        flex: 33.33%;
+        padding: 5px;
+      }
+</style>
+
+<style>
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row3 {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
+
+<style>
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column4 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row4 {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+</style>
+
+<!-- <style>
+  body{
+    background-color: lightgrey
+  }
+</style>  -->
+
+
+
+
+</head>
+<body>
+   
+        <nav align="center">
+        <img src="amazonimg/logo1.webp" alt="" width="1950" height="350">
+        <br>
+        <br>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <input type="text" placeholder="Search..">
+          </div>
+          <div class="topnav2" align="left">
+            <a href="#"><select name="" id="">
+                <option value="">All</option>
+                <option value="Best-seller">Best-seller</option>
+                <option value="New Release">New Release</option>
+                <option value="Movers and Shakers">Movers and Shakers</option>
+                <hr>
+                <b><option value="digital Content and Devices">digital Content and Devices</option></b>
+                <option value="Echo & Alexa">Echo & Alexa</option>
+                <option value="Fire TV">Fire TV</option>
+                <option value="Kindle E-Reader &eBooks">Kindle E-Reader &eBooks</option>
+                <option value="Amazon Prime Video">Amazon Prime Video</option>
+                <option value="Amazon Prime Music">Amazon Prime Music</option>
+                <hr>
+                <b><option value="Shop By Category">Shop By Category</option></b>
+                <option value="Mobiles, Computer">Mobiles, Computer</option>
+                <option value="Tv,Appliances,Electronics">Tv,Appliances,Electronics</option>
+                <option value="Men's Fashion">Men's Fashion</option>
+                <option value="Women's Fashion">Women's Fashion</option>
+            </a>
+        </select> 
+        <nav align="right">
+            <b>Fresh</b>
+            <b>Amazon-Minitv</b>
+         <b>Sell</b>
+         <b>Best-seller</b>
+         <b>Mobiles</b>
+         <b>Today's Deals</b>
+        </nav>
+          </div>
+          <br>
+          <br>
+          <img src="amazonimg/festival.jpg" alt="" width="1950" height="350">
+          <br>
+          <br>
+          <br>
+          <br>
+            <div class="row">
+                <div class="column">
+                    <figure>
+                        <figcaption>
+                            <h3><b>Shop all Deals</b></h3>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        
+            <img src="amazonimg/fortuner.jpg" alt="" width="180" height="180">
+            <figcaption>
+                <br>
+                <nav align="center">
+                See all offers
+            </nav>
+            </figcaption>
+        </div>
+        <div class="column">
+            <figcaption>
+                <h3><b>Continue Shopping Deals</b></h3>
+            </figcaption>
+        </figure>
+            <img src="amazonimg/mobiles.webp" alt="" width="180" height="180">
+            <figcaption>
+                <br>
+                <nav align="center">
+                See all offers
+            </nav>
+            </figcaption>
+        </div>
+        <div class="column">
+            <figure>
+                <figcaption>
+                    <h3><b>Deals For You </b></h3>
+                </figcaption>
+            </figure>
+            <img src="amazonimg/computer.jpeg" alt="" width="180" height="180">
+            <figcaption>
+                <br>
+                <nav align="center">
+                See all offers
+            </nav>
+            </figcaption>
+        </div>
+        <div class="column">
+            <figure>
+                <figcaption>
+                    <h3><b>Deals for You On Smart-phones</b></h3>
+                </figcaption>
+            </figure>
+            <img src="amazonimg/Apple.webp" alt="" width="180" height="180">
+            <br>
+            <figcaption>
+                <br>
+                <nav align="center">
+                See all offers
+            </nav>
+            </figcaption>
+        </div>
+        </div>
+        <br>
+        <br>
+        <img src="amazonimg/fashion.jpg" alt="" width="1500" height="350">
+        <br>
+        <br>
+        <br>
+       <div class="row1">
+        <div class="column1">
+            <img src="amazonimg/realme.jpg" alt="" width="150" height="150">
+            <br>
+            <br>
+            <figure>
+                <figcaption>
+                    Realme narzo 60 5G <br>(Mars Orange,8+GB + 128GB) <br>
+                    90HZ Super AMOLED...
+                </figcaption>
+                <br>
+                  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+            </figure>
+            <figure>
+                <figcaption>
+                    <B>Great Summer Sale</B> <br>
+                    $120
+                </figcaption>
+            </figure>
+        </div>
+        <div class="column1">
+<img src="amazonimg/ear.jpg" alt="" width="150" height="150">
+<figure>
+    <figcaption>
+        realme Buds T300 Truly <br>wireless in-Earbuds <br>with 30dB Anc, 360 <br>Spatial Audio Effect....
+        
+    </figcaption>
+    <br>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</figure>
+<figcaption>
+    <b>Great Summer Sale</b><br>
+    $59
+</figcaption>
+        </div>
+        <div class="column1">
+            <img src="amazonimg/charger.jpg" alt="" width="150" height="150">
+            <br>
+            <figure>
+                <figcaption>
+                    Samsung Original 25W <br>Single Port, Type-C Fast <br>
+                    Charger,(Cable not <br> include),White...
+                </figcaption>
+            </figure>
+            <figcaption>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
+            </figcaption>
+            <br>
+            <figcaption><b>Electronics</b> <br>
+            $60</figcaption>
+        </div>
+        <div class="column1">
+            <img src="amazonimg/watch.jpg" alt="" width="240" height="150">
+            <br>
+            <figure>
+                <figcaption>
+                    boAt Ultima Chronos With  <br>1.96 AMOLED Display, <br>Advanced Bt Calling <br> Multiple Watch faces..
+                </figcaption>
+                <br>
+                <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+            </figure>
+            <figcaption>
+                <b>Great Summer Sale</b><br>
+                $20
+            </figcaption>
+
+        </div>
+       </div>
+       <br>
+       <br>
+       <div class="row2">
+        <div class="column2">
+            <img src="amazonimg/back.jpg" alt="" width="150" height="200">
+            <figure>
+                <figcaption>
+                    MIDIOS iPhone 15 Plus <br>
+                    Back Cover Liquid <br>
+                    Silicion Full..
+                </figcaption>
+                <br>
+                <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+            </figure>
+            <figcaption>
+                20 Ratings| Search this page <br>
+                <b>$15</b>
+            </figcaption>
+        </div>
+        <div class="cloumn2">
+            <img src="amazonimg/oneplus.jpg" alt="" width="150" height="200">
+        <figure>
+            <figcaption>
+                OnePlus 11R 5G (Sonic Black, 8GB RAM, 128GB Storage)
+            </figcaption>
+            <figure>
+                <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked" ></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+            </figure>
+            <figure>
+                3,465 ratings | Search this page <br><b>$245</b>
+            </figure>
+        </figure>
+        </div>
+        <div class="column2">
+<img src="amazonimg/temp.jpg" alt="" width="150" height="200">
+<figure>
+    <figcaption>
+        Mizi Tempered Glass Case  <br>For Apple Smartwatch Ultra <br> (2022) / Ultra 2 (2023) 49Mm  <br>- Clear
+        <br>
+        <br>
+        <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    </figcaption>
+    <figure>
+        <figcaption>
+            956 ratings | Search this page  <br><b>$25</b>
+        </figcaption>
+    </figure>
+</figure>
+        </div>
+        <div class="column2">
+<img src="amazonimg/temp1.jpg" alt="" width="150" height="200">
+<figure>
+    <figcaption>
+        Amazon Basics Easy Fit Tempered  <br>Glass Screen Protector For Iphone  <br>14 Pro Max (With Easy Applicator)  <br>- Pack Of 2 for Smartphone
+    </figcaption>
+    <br>
+    
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</figure>
+<figure>
+    <figcaption>
+        20 ratings | Search this page
+<b>$25</b>
+    </figcaption>
+</figure>
+        </div>
+       </div>
+       <br>
+       <br>
+       <br>
+       <img src="amazonimg/mobile.jpg" alt="" width="1500" height="450">
+       <br>
+       <br>
+       <div class="row3">
+        <div class="column3">
+       <img src="amazonimg/philips.jpg" alt="" width="190" height="200">
+       <figure>
+        <figcaption>
+          Philips Pro Beard Trimmer  <br>and Styler| Titanium blades <br>| 2.5x higher precision| <br>Beard Sense tech |5 mins quick
+        </figcaption>
+        <figure>
+          <figcaption>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </figcaption>
+          <br>
+          7,768 ratings | Search this page
+        </figure>
+       </figure>
+      </div>
+      <div class="column3">
+       <img src="amazonimg/face.jpg" alt="" width="190" height="200">
+       <figure>
+        <figcaption>
+          Denver Acne Clear  <br>Face Wash - 100GM | Remove
+        </figcaption>
+        <figure>
+          <figure>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span><br>
+         
+            <br>
+            3 ratings | Search this page <br><b>$5</b>
+            </figcaption>
+          </figure>
+        </figure>
+       </figure>
+      </div>
+      <div class="column3">
+       <img src="amazonimg/tide.jpg" alt="" width="170" height="190">
+       <figure>
+        <figcaption>
+          Tide Plus Double Power <br> Detergent Washing Powder
+        </figcaption>
+        <figure>
+          <figcaption><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span></figcaption><br>
+            64,561 ratings | Search this page <br><b>$4</b>
+        </figure>
+       </figure>
+      </div>
+      <div class="column3">
+       <img src="amazonimg/nivea.jpg" alt="" width="200" height="200">
+       <figure>
+        <figcaption>
+          nivea soft light moisturising  <br>cream 300 ml
+        </figcaption>
+        <figure>
+          <figcaption>
+            <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><br><br>
+            59,274 ratings | Search this page <br>
+            <b>$2</b>
+          </figcaption>
+        </figure>
+       </figure>
+      </div>
+      </div>
+      <br>
+      <br>
+      <div class="row4">
+        <div class="column4">
+   <img src="amazonimg/harpic.jpg" alt="" width="200" height="200">
+   <figure>
+    <figcaption>
+      Harpic 1 Litre (Pack of 2) - Original, Disinfectant Toilet Cleaner Liquid | Suitable for Toilet Bowls
+    </figcaption>
+   
+    <br>
+    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+   </figure>
+   52,306 ratings | Search this page <br>
+   <b>$7</b>
+  </div>
+  <div class="column4">
+   <img src="amazonimg/huggies.jpg" alt="" width="190" height="200">
+   <figure>
+    <figcaption>
+      Huggies Complete Comfort Wonder Pants Medium (M) Size (7-12 Kgs) Baby Diaper Pants,..
+    </figcaption>
+    <br>
+    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+   </figure>
+   <br>
+   199,969 ratings | Search this page <br>
+   <b>$6</b>
+  </div>
+  <div class="column4">
+   <img src="amazonimg/peanut.jpg" alt="" width="150" height="200">
+   <figure>
+    <figcaption>
+      Veeba Creamy Peanut Butter| High Protein | Naturally Gluten Free | Vegan | Trans Fat Free | No Added Preservatives | No Added Colour & Flavour | Non GMO | 925g
+    </figcaption>
+    <br>
+    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+   </figure>
+   <br>
+   952 ratings | Search this page <br>
+  <b> $4</b>
+  </div>
+  <div class="column4">
+   <img src="amazonimg/red label.jpg" alt="" width="200" height="200">
+ <figure>
+  <figcaption>
+    Red Label Tea 1 kg Pack, Strong Chai from the Best Chosen Leaves, Rich in Healthy Flavonoids - Premium Powdered Black Tea
+  </figcaption>
+  <br>
+  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
+ </figure>
+ <br>
+ 7,203 ratings | Search this page <br>
+ <b>$3</b>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <img src="amazonimg/w1.jpg" alt="" width="150" height="150">
+  <img src="amazonimg/w2.jpg" alt="" width="150" height="150">
+  <img src="amazonimg/w3.jpg" alt="" width="150" height="150">
+  <img src="amazonimg/w4.jpg" alt="" width="150" height="150">
+  <img src="amazonimg/w5.jpg" alt="" width="150" height="150">
+  <img src="amazonimg/w6.jpg" alt="" width="150" height="150">
+  <br>
+  <br>
+  <br>
+  <img src="amazonimg/boult.png" alt="" width="1500" height="350">
+  <hr>
+  <nav align="center">
+    <br>
+See Persnalized Recommendations
+<br>
+<br>
+<input type="select" placeholder="sign in"><br>
+<p>New coustmer ? <a href="#"> start here.</a></p>
+  </nav>
+  <hr>
+  <br>
+  <nav align="center">
+    <H4><b>Back to top</b></H4>
+  </nav>
+  
+  <nav align="left">
+
+
+
+    <b>Get to Know Us</b><br>
+    <br>
+    About Us <br>
+    Carrer <br>
+    Press Releases
+    <br>
+    Amazon Science  
+  </nav> 
+
+    <nav align="center">
+      <b>Connect With Us</b><br>
+      <br>
+      Facebook
+      <br>
+      Twitter <br>
+      Instagram
+
+
+    <nav align="right"> <br>
+      <b>Make Money With us</b> <br>
+      <br>
+      Sell On Amazon <br>
+      Sell Under Amazon Accelerator <br>
+      Protector and Build Your brand <br>
+      Become an Affiiate
+       
+    </nav>
+    <hr>
+    <nav align="left">
+    <img src="amazonimg/amazonlogo.jpg" alt="" width="150" height="100">
+  </nav>
+  <nav align="center">
+
+  <p>
+    <select name="Language_type" id="Language_type">
+    <option value="">select_language</option>
+    <option value="english">english</option>
+    <option value="ಕನ್ನಡ">ಕನ್ನಡ</option>
+    <option value="
+    టెలిగు
+    ">
+    టెలిగు
+    </option>
+    <option value="
+    മലയാളം">
+    മലയാളം</option>
+    <option value="मराठी">मराठी</option>
+  </select>
+  <br>
+  <br>
+  </p>
+  <nav align="center">
+    <input type="text" placeholder="India">
+
+  </nav>
+  <hr>
+  <nav align="left">
+    <b>AbeBooks</b><br>
+    Books,Art <br>&collections
+    <br>
+    <br>
+    <b>ShopBop</b><br>
+    Designer <br> Fashion Brands
+<nav align="Center">
+  <b>Amazon Web Serivices</b> <br>
+  Scalable Cloud <br>
+Computing Services <br>
+<br>
+<b>Amazon Business</b>
+<br>
+Everything For
+Your Business
+
+<nav align="right"> <br>
+ <b>  Audible</b>
+ <br>
+  Download
+  Audio Books
+<br>
+<b>Prime Now</b>
+<br>
+2-Hour Delivery
+on Everyday Items
+
+
+</nav>
+</nav>
+  </nav>
+
+
+
+</body>
+</html>
